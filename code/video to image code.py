@@ -13,7 +13,7 @@ while (vidcap.isOpened()):
 
     # 캡쳐된 이미지를 저장하는 함수 
     if(int(vidcap.get(1)) % 20 == 0): #전체 프레임중 1/20 만 가져와 저장
-        print('saved frame number : ' + str(ing(vidcap.get(1))))
+        print('saved frame number : ' + str(int(vidcap.get(1))))
         cv2.imwrite("#경로" %count, image)
         print('saved frame%d.jpg' % count)
         count += 1
