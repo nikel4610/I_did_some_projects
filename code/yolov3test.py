@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import time
 # Load Yolo
-net = cv2.dnn.readNet("yolo-tiny-obj.weights", "yolo-tiny-obj.cfg")
+net = cv2.dnn.readNet("yolo-tiny-obj.weights", "yolo-tiny-obj.cfg") #https://github.com/haris0/military-object 출처
 classes = []
 with open("obj.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
