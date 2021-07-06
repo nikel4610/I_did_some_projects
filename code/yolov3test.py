@@ -2,15 +2,15 @@ import cv2
 import numpy as np
 import time
 # Load Yolo
-net = cv2.dnn.readNet("yolov3.weights", "yolov3.cfg")
+net = cv2.dnn.readNet("yolo-tiny-obj.weights", "yolo-tiny-obj.cfg")
 classes = []
-with open("coco.names", "r") as f:
+with open("obj.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
-cap = cv2.VideoCapture('http://172.30.1.37:4747/video')
+cap = cv2.VideoCapture('0',cv2.CAP_V4L2)
 font = cv2.FONT_HERSHEY_PLAIN
 starting_time = time.time()
 frame_id = 0
