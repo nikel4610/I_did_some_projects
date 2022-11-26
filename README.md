@@ -1,4 +1,4 @@
-# [드론정찰 및 피아식별](https://righteous-kileskus-db8.notion.site/08817662278542189d87382ec136fec5?p=27f7f6b5ceeb444b90e6a72dd5ec4292&pm=c)
+# [드론정찰 및 피아식별 노션](https://righteous-kileskus-db8.notion.site/08817662278542189d87382ec136fec5?p=27f7f6b5ceeb444b90e6a72dd5ec4292&pm=c)
 한이음 ICT 4드론 팀입니다.
 
 ---
